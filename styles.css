@@ -16,6 +16,8 @@ font-family: 'Josefin Sans', sans-serif;*/
 
     --primary-dark: rgba(60, 60, 60, 1);
     --primary-light: rgba(255, 206, 179, 1);
+
+    --title-ff: 'Dancing Script', cursive;
 }
 
 body {
@@ -26,6 +28,8 @@ body {
 
 button {
     display: block;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 image {
@@ -37,26 +41,65 @@ image {
 .nav_top {
     display: flex;
     flex-direction: column;
+    align-items: left;
     background-color: var(--primary-dark);
     color: var(--primary-light);
 }
 
 .nav_contact {
     display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav_contact_text {
+    margin: 0 1rem 0 0;
 }
 
 .nav_sign-in {
     display: flex;
+    padding: 0 1rem;
+}
+
+.nav_sign-in_btn {
+    color: var(--primary-light);
+    font-weight: 300;
+    text-align: left;    
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid var(--primary-light);
+    margin: 0 1rem 0 0;
+    padding: 0 1rem;
 }
 
 .nav_title {
     display: flex;
+    align-items: flex-end;
     background-color: var(--primary-dark);
     color: var(--primary-light);
+    padding: 1rem;
+}
+
+.nav_title-main {
+    font-family: var(--title-ff);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.nav_subtitle {
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .nav_bottom {
     display: flex;
+    padding: 1rem;
+}
+
+.nav_bottom_link {
+    margin: 0 1rem 0 0;
 }
 
 .nav_bottom_social {
