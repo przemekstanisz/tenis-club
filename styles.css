@@ -40,27 +40,31 @@ image {
 
 .nav_top {
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    justify-content: space-between;
     background-color: var(--primary-dark);
     color: var(--primary-light);
+    padding: 1rem 1rem 0 1rem;
 }
 
 .nav_contact {
     display: flex;
+    flex-direction: column;
+}
+.contact_element {
+    display: flex;
     align-items: center;
-    padding: 1rem;
+    margin: 0 0 1rem 0;
 }
 
 .nav_contact_text {
-    font-size: .9rem;
     font-weight: 300;
-    margin: 0 1rem 0 0;
+    margin: 0 0 0 .5rem;
 }
 
 .nav_sign-in {
     display: flex;
-    padding: 0 1rem;
+    background-color: var(--primary-dark);
+    padding: 0 1rem 1rem 1rem;
 }
 
 .nav_sign-in_btn {
@@ -68,7 +72,8 @@ image {
     color: var(--primary-light);
     font-weight: 300;
     text-align: left; 
-    width: 30%;
+    width: 40%;
+    min-width: 100px;
     height: 30px;
     background-color: transparent;
     border: 1px solid var(--primary-light);
@@ -77,18 +82,9 @@ image {
 }
 
 .nav_title {
-    display: flex;
-    align-items: flex-end;
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
-    padding: 1rem;
-}
-
-.nav_title-main {
     font-family: var(--title-ff);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 2rem;
 }
 
 .nav_subtitle {
@@ -99,6 +95,7 @@ image {
 .nav_bottom {
     display: flex;
     padding: 1rem;
+    margin: 0 0 1rem 0;
 }
 
 .nav_bottom_link {
@@ -128,8 +125,8 @@ image {
                         }
 
                         .menu_link {
-                            font-family: 'Dancing Script', cursive;
-                            font-size: 1.5rem;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-size: 1.25rem;
                             color: var(--primary-dark);
                             clear: right;
                             text-decoration: none;
@@ -171,3 +168,53 @@ image {
                         #toggle:checked + .menu_list {
                             display: block;
                         }
+
+.cta {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta_title {
+    font-family: var(--title-ff);
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0 0 2rem 0;
+}
+
+.cta_text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+.cta_btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta_btn-action,
+.cta_btn-more {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    font-family: var(--title-ff);
+    font-size: 1.75rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    margin: 0 0 2rem 0;
+}
+
+.cta_btn-action {
+    color: var(--primary-light);
+    background-color: var(--primary-dark);
+}
+
+.cta_btn-more {
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark)
+}
