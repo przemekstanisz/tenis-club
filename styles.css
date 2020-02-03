@@ -53,6 +53,8 @@ image {
 }
 
 .nav_contact_text {
+    font-size: .9rem;
+    font-weight: 300;
     margin: 0 1rem 0 0;
 }
 
@@ -62,10 +64,11 @@ image {
 }
 
 .nav_sign-in_btn {
+    font-size: .9rem;
     color: var(--primary-light);
     font-weight: 300;
-    text-align: left;    
-    width: 150px;
+    text-align: left; 
+    width: 30%;
     height: 30px;
     background-color: transparent;
     border: 1px solid var(--primary-light);
